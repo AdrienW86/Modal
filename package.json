@@ -2,12 +2,19 @@
   "name": "modal-custom-react",
   "description": "a simple custom modal",
   "author": "Adrien W.",
-  "keywords": ["react", "components", "modal"],
-  "version": "0.2.4",
+  "keywords": [
+    "react",
+    "components",
+    "modal"
+  ],
+  "version": "0.2.5",
   "private": false,
   "main": "dist/index.js",
-  "module": "dist/index.js", 
-  "files": [ "dist", "README.md" ] ,
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "react": "^18.2.0",
@@ -16,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files" ,
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -25,5 +32,17 @@
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.19.0",
     "@babel/preset-env": "^7.19.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
