@@ -1,29 +1,27 @@
 {
-  "name": "modal-custom-react",
+  "name": "modale-custom-react",
   "description": "a simple custom modal",
   "author": "Adrien W.",
-  "keywords": [
-    "react",
-    "components",
-    "modal"
-  ],
-  "version": "0.2.5",
+  "keywords": ["react", "components", "modal"],
+  "version": "0.1.2",
   "private": false,
   "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [
-    "dist",
-    "README.md"
-  ],
+  "module": "dist/index.js", 
+  "files": [ "dist", "README.md" ] ,
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
   },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdrienW86/Modal.git"
+  },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files" ,
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -32,17 +30,5 @@
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.19.0",
     "@babel/preset-env": "^7.19.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
