@@ -1,4 +1,4 @@
-**Content of the modal**
+***Content of the modal***
 
 <Modal 
     close = {closeModal} 
@@ -7,16 +7,19 @@
 
 **To display the modal, just create a state:**
 
-const [toggle, setToggle] = useState(false)
+> const [toggle, setToggle] = useState(false)
 
-**and a closeModal function:**
+**And a closeModal function:**
 
+```
 const closeModal = () => {
     setToggle(false)
 }
+```
 
 **Then the modal is displayed or not depending on the value of toggle:**
 
+```
 return( 
     <>
     {toggle 
@@ -30,5 +33,6 @@ return(
     }
     </>
 )
+```
 
 **Github: https://github.com/AdrienW86/Modal.git**
